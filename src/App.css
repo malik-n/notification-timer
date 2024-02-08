@@ -1,0 +1,27 @@
+#notification {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgb(77, 77, 255);
+  transition: 1s;
+  background-color: rgb(77, 77, 255);
+  color: white;
+}
+
+p:hover {
+  color: white;
+  background-color: black;
+}
+
+#notification.visible {
+  transform: translateX(0%);
+}
+
+#notification.hidden {
+  transform: translateX(120%);
+}
